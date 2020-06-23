@@ -43,40 +43,40 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonDel = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.comboBoxEmployer = new System.Windows.Forms.ComboBox();
             this.labelEmployer = new System.Windows.Forms.Label();
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // comboBoxCitizen
             // 
             this.comboBoxCitizen.FormattingEnabled = true;
-            this.comboBoxCitizen.Location = new System.Drawing.Point(86, 138);
+            this.comboBoxCitizen.Location = new System.Drawing.Point(24, 138);
             this.comboBoxCitizen.Name = "comboBoxCitizen";
-            this.comboBoxCitizen.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxCitizen.Size = new System.Drawing.Size(123, 21);
             this.comboBoxCitizen.TabIndex = 0;
             // 
             // textBoxService
             // 
-            this.textBoxService.Location = new System.Drawing.Point(86, 178);
+            this.textBoxService.Location = new System.Drawing.Point(24, 178);
             this.textBoxService.Name = "textBoxService";
-            this.textBoxService.Size = new System.Drawing.Size(100, 20);
+            this.textBoxService.Size = new System.Drawing.Size(123, 20);
             this.textBoxService.TabIndex = 1;
             // 
             // textBoxDate
             // 
-            this.textBoxDate.Location = new System.Drawing.Point(87, 226);
+            this.textBoxDate.Location = new System.Drawing.Point(25, 217);
             this.textBoxDate.Name = "textBoxDate";
-            this.textBoxDate.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDate.Size = new System.Drawing.Size(122, 20);
             this.textBoxDate.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 122);
+            this.label1.Location = new System.Drawing.Point(21, 122);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 13);
             this.label1.TabIndex = 3;
@@ -85,7 +85,7 @@
             // labelService
             // 
             this.labelService.AutoSize = true;
-            this.labelService.Location = new System.Drawing.Point(83, 162);
+            this.labelService.Location = new System.Drawing.Point(21, 162);
             this.labelService.Name = "labelService";
             this.labelService.Size = new System.Drawing.Size(62, 13);
             this.labelService.TabIndex = 4;
@@ -94,7 +94,7 @@
             // labelDate
             // 
             this.labelDate.AutoSize = true;
-            this.labelDate.Location = new System.Drawing.Point(83, 210);
+            this.labelDate.Location = new System.Drawing.Point(21, 201);
             this.labelDate.Name = "labelDate";
             this.labelDate.Size = new System.Drawing.Size(93, 13);
             this.labelDate.TabIndex = 5;
@@ -103,7 +103,7 @@
             // comboBoxStaff
             // 
             this.comboBoxStaff.FormattingEnabled = true;
-            this.comboBoxStaff.Location = new System.Drawing.Point(87, 268);
+            this.comboBoxStaff.Location = new System.Drawing.Point(26, 256);
             this.comboBoxStaff.Name = "comboBoxStaff";
             this.comboBoxStaff.Size = new System.Drawing.Size(121, 21);
             this.comboBoxStaff.TabIndex = 6;
@@ -111,7 +111,7 @@
             // labelStaff
             // 
             this.labelStaff.AutoSize = true;
-            this.labelStaff.Location = new System.Drawing.Point(86, 249);
+            this.labelStaff.Location = new System.Drawing.Point(23, 240);
             this.labelStaff.Name = "labelStaff";
             this.labelStaff.Size = new System.Drawing.Size(60, 13);
             this.labelStaff.TabIndex = 7;
@@ -130,10 +130,10 @@
             this.listViewReception.FullRowSelect = true;
             this.listViewReception.GridLines = true;
             this.listViewReception.HideSelection = false;
-            this.listViewReception.Location = new System.Drawing.Point(292, 122);
+            this.listViewReception.Location = new System.Drawing.Point(164, 122);
             this.listViewReception.MultiSelect = false;
             this.listViewReception.Name = "listViewReception";
-            this.listViewReception.Size = new System.Drawing.Size(496, 167);
+            this.listViewReception.Size = new System.Drawing.Size(699, 195);
             this.listViewReception.TabIndex = 8;
             this.listViewReception.UseCompatibleStateImageBehavior = false;
             this.listViewReception.View = System.Windows.Forms.View.Details;
@@ -142,61 +142,78 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "id гражданина";
+            this.columnHeader1.Width = 87;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "ФИО гражданина";
+            this.columnHeader2.Width = 115;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Вид услуги";
+            this.columnHeader3.Width = 81;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Дата обращения";
+            this.columnHeader4.Width = 107;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "id сотрудника";
+            this.columnHeader5.Width = 85;
             // 
             // columnHeader6
             // 
             this.columnHeader6.Text = "ФИО сотрудника";
+            this.columnHeader6.Width = 103;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Работодатель";
+            this.columnHeader7.Width = 111;
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(292, 331);
+            this.buttonAdd.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAdd.Location = new System.Drawing.Point(164, 331);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdd.Size = new System.Drawing.Size(160, 36);
             this.buttonAdd.TabIndex = 9;
             this.buttonAdd.Text = "Создать";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonDel
             // 
-            this.buttonDel.Location = new System.Drawing.Point(429, 331);
+            this.buttonDel.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDel.Location = new System.Drawing.Point(437, 331);
             this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Size = new System.Drawing.Size(75, 23);
+            this.buttonDel.Size = new System.Drawing.Size(160, 36);
             this.buttonDel.TabIndex = 10;
             this.buttonDel.Text = "Удалить";
-            this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.UseVisualStyleBackColor = false;
             this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(554, 331);
+            this.buttonEdit.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonEdit.Location = new System.Drawing.Point(703, 331);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(75, 23);
+            this.buttonEdit.Size = new System.Drawing.Size(160, 36);
             this.buttonEdit.TabIndex = 11;
             this.buttonEdit.Text = "Редактировать";
-            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.UseVisualStyleBackColor = false;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // comboBoxEmployer
             // 
             this.comboBoxEmployer.FormattingEnabled = true;
-            this.comboBoxEmployer.Location = new System.Drawing.Point(86, 311);
+            this.comboBoxEmployer.Location = new System.Drawing.Point(26, 296);
             this.comboBoxEmployer.Name = "comboBoxEmployer";
             this.comboBoxEmployer.Size = new System.Drawing.Size(121, 21);
             this.comboBoxEmployer.TabIndex = 12;
@@ -204,22 +221,18 @@
             // labelEmployer
             // 
             this.labelEmployer.AutoSize = true;
-            this.labelEmployer.Location = new System.Drawing.Point(87, 295);
+            this.labelEmployer.Location = new System.Drawing.Point(23, 280);
             this.labelEmployer.Name = "labelEmployer";
             this.labelEmployer.Size = new System.Drawing.Size(78, 13);
             this.labelEmployer.TabIndex = 13;
             this.labelEmployer.Text = "Работодатель";
             // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Работодатель";
-            this.columnHeader7.Width = 85;
-            // 
             // FormReception
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(810, 450);
+            this.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.ClientSize = new System.Drawing.Size(886, 420);
             this.Controls.Add(this.labelEmployer);
             this.Controls.Add(this.comboBoxEmployer);
             this.Controls.Add(this.buttonEdit);
@@ -235,6 +248,7 @@
             this.Controls.Add(this.textBoxService);
             this.Controls.Add(this.comboBoxCitizen);
             this.Name = "FormReception";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormReception";
             this.Load += new System.EventHandler(this.FormReception_Load);
             this.ResumeLayout(false);

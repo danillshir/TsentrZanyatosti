@@ -18,6 +18,7 @@ namespace TsentrZanyatosti
         public EmployerSet()
         {
             this.BankSet = new HashSet<BankSet>();
+            this.ReceptionSet = new HashSet<ReceptionSet>();
         }
     
         public int id { get; set; }
@@ -29,5 +30,7 @@ namespace TsentrZanyatosti
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BankSet> BankSet { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ReceptionSet> ReceptionSet { get; set; }
     }
 }

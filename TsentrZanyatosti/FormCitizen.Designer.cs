@@ -54,28 +54,28 @@
             // 
             this.textBoxFirstname.Location = new System.Drawing.Point(52, 130);
             this.textBoxFirstname.Name = "textBoxFirstname";
-            this.textBoxFirstname.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFirstname.Size = new System.Drawing.Size(121, 20);
             this.textBoxFirstname.TabIndex = 0;
             // 
             // textBoxLastname
             // 
             this.textBoxLastname.Location = new System.Drawing.Point(52, 177);
             this.textBoxLastname.Name = "textBoxLastname";
-            this.textBoxLastname.Size = new System.Drawing.Size(100, 20);
+            this.textBoxLastname.Size = new System.Drawing.Size(121, 20);
             this.textBoxLastname.TabIndex = 1;
             // 
             // textBoxMiddlename
             // 
             this.textBoxMiddlename.Location = new System.Drawing.Point(52, 220);
             this.textBoxMiddlename.Name = "textBoxMiddlename";
-            this.textBoxMiddlename.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMiddlename.Size = new System.Drawing.Size(121, 20);
             this.textBoxMiddlename.TabIndex = 2;
             // 
             // textBoxPhone
             // 
             this.textBoxPhone.Location = new System.Drawing.Point(52, 266);
             this.textBoxPhone.Name = "textBoxPhone";
-            this.textBoxPhone.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPhone.Size = new System.Drawing.Size(121, 20);
             this.textBoxPhone.TabIndex = 3;
             // 
             // comboBoxStatus
@@ -102,10 +102,10 @@
             this.listViewCitizen.FullRowSelect = true;
             this.listViewCitizen.GridLines = true;
             this.listViewCitizen.HideSelection = false;
-            this.listViewCitizen.Location = new System.Drawing.Point(248, 130);
+            this.listViewCitizen.Location = new System.Drawing.Point(179, 111);
             this.listViewCitizen.MultiSelect = false;
             this.listViewCitizen.Name = "listViewCitizen";
-            this.listViewCitizen.Size = new System.Drawing.Size(435, 200);
+            this.listViewCitizen.Size = new System.Drawing.Size(435, 219);
             this.listViewCitizen.TabIndex = 5;
             this.listViewCitizen.UseCompatibleStateImageBehavior = false;
             this.listViewCitizen.View = System.Windows.Forms.View.Details;
@@ -114,55 +114,65 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "id";
+            this.columnHeader1.Width = 38;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Имя";
+            this.columnHeader2.Width = 69;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Фамилия";
+            this.columnHeader3.Width = 85;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Отчество";
+            this.columnHeader4.Width = 78;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "Телефон";
+            this.columnHeader5.Width = 81;
             // 
             // columnHeader6
             // 
             this.columnHeader6.Text = "Статус";
+            this.columnHeader6.Width = 73;
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(248, 351);
+            this.buttonAdd.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonAdd.Location = new System.Drawing.Point(179, 351);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(88, 36);
+            this.buttonAdd.Size = new System.Drawing.Size(120, 36);
             this.buttonAdd.TabIndex = 6;
             this.buttonAdd.Text = "Создать";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonDel
             // 
-            this.buttonDel.Location = new System.Drawing.Point(409, 351);
+            this.buttonDel.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonDel.Location = new System.Drawing.Point(342, 351);
             this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Size = new System.Drawing.Size(99, 36);
+            this.buttonDel.Size = new System.Drawing.Size(120, 36);
             this.buttonDel.TabIndex = 7;
             this.buttonDel.Text = "Удалить";
-            this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.UseVisualStyleBackColor = false;
             this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(584, 351);
+            this.buttonEdit.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonEdit.Location = new System.Drawing.Point(494, 351);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(99, 36);
+            this.buttonEdit.Size = new System.Drawing.Size(120, 36);
             this.buttonEdit.TabIndex = 8;
             this.buttonEdit.Text = "Редактировать";
-            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.UseVisualStyleBackColor = false;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // labelFirstName
@@ -214,7 +224,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.ClientSize = new System.Drawing.Size(692, 416);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.labelPhone);
             this.Controls.Add(this.labelMiddleName);
@@ -230,6 +241,7 @@
             this.Controls.Add(this.textBoxLastname);
             this.Controls.Add(this.textBoxFirstname);
             this.Name = "FormCitizen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCitizen";
             this.ResumeLayout(false);
             this.PerformLayout();

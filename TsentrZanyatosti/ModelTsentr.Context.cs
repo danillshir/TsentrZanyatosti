@@ -13,10 +13,10 @@ namespace TsentrZanyatosti
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ZanyatostEntities : DbContext
+    public partial class ZanyatostEntities1 : DbContext
     {
-        public ZanyatostEntities()
-            : base("name=ZanyatostEntities")
+        public ZanyatostEntities1()
+            : base("name=ZanyatostEntities1")
         {
         }
     
@@ -31,5 +31,6 @@ namespace TsentrZanyatosti
         public virtual DbSet<PaySet> PaySet { get; set; }
         public virtual DbSet<ReceptionSet> ReceptionSet { get; set; }
         public virtual DbSet<StaffSet> StaffSet { get; set; }
+        public virtual DbSet<Users> Users { get; set; }
     }
 }

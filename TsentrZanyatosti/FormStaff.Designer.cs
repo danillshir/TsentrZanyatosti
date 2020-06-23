@@ -53,7 +53,7 @@
             // labelPhone
             // 
             this.labelPhone.AutoSize = true;
-            this.labelPhone.Location = new System.Drawing.Point(52, 258);
+            this.labelPhone.Location = new System.Drawing.Point(22, 253);
             this.labelPhone.Name = "labelPhone";
             this.labelPhone.Size = new System.Drawing.Size(55, 13);
             this.labelPhone.TabIndex = 19;
@@ -62,7 +62,7 @@
             // labelMiddleName
             // 
             this.labelMiddleName.AutoSize = true;
-            this.labelMiddleName.Location = new System.Drawing.Point(52, 208);
+            this.labelMiddleName.Location = new System.Drawing.Point(24, 208);
             this.labelMiddleName.Name = "labelMiddleName";
             this.labelMiddleName.Size = new System.Drawing.Size(54, 13);
             this.labelMiddleName.TabIndex = 18;
@@ -71,7 +71,7 @@
             // labelLastName
             // 
             this.labelLastName.AutoSize = true;
-            this.labelLastName.Location = new System.Drawing.Point(52, 162);
+            this.labelLastName.Location = new System.Drawing.Point(24, 162);
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(56, 13);
             this.labelLastName.TabIndex = 17;
@@ -80,7 +80,7 @@
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(52, 116);
+            this.labelName.Location = new System.Drawing.Point(24, 116);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(29, 13);
             this.labelName.TabIndex = 16;
@@ -88,30 +88,30 @@
             // 
             // textBoxPhone
             // 
-            this.textBoxPhone.Location = new System.Drawing.Point(55, 274);
+            this.textBoxPhone.Location = new System.Drawing.Point(25, 269);
             this.textBoxPhone.Name = "textBoxPhone";
-            this.textBoxPhone.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPhone.Size = new System.Drawing.Size(121, 20);
             this.textBoxPhone.TabIndex = 14;
             // 
             // textBoxMiddleName
             // 
-            this.textBoxMiddleName.Location = new System.Drawing.Point(55, 224);
+            this.textBoxMiddleName.Location = new System.Drawing.Point(25, 224);
             this.textBoxMiddleName.Name = "textBoxMiddleName";
-            this.textBoxMiddleName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMiddleName.Size = new System.Drawing.Size(121, 20);
             this.textBoxMiddleName.TabIndex = 13;
             // 
             // textBoxLastName
             // 
-            this.textBoxLastName.Location = new System.Drawing.Point(55, 178);
+            this.textBoxLastName.Location = new System.Drawing.Point(25, 178);
             this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxLastName.Size = new System.Drawing.Size(121, 20);
             this.textBoxLastName.TabIndex = 12;
             // 
             // textBoxFirstName
             // 
-            this.textBoxFirstName.Location = new System.Drawing.Point(55, 132);
+            this.textBoxFirstName.Location = new System.Drawing.Point(25, 132);
             this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFirstName.Size = new System.Drawing.Size(121, 20);
             this.textBoxFirstName.TabIndex = 11;
             // 
             // comboBoxOtdel
@@ -122,7 +122,7 @@
             "Отдел профориентации",
             "Отдел бухгалтерии",
             "Отдел профобучения"});
-            this.comboBoxOtdel.Location = new System.Drawing.Point(55, 324);
+            this.comboBoxOtdel.Location = new System.Drawing.Point(25, 313);
             this.comboBoxOtdel.Name = "comboBoxOtdel";
             this.comboBoxOtdel.Size = new System.Drawing.Size(121, 21);
             this.comboBoxOtdel.TabIndex = 20;
@@ -130,7 +130,7 @@
             // labelOtdel
             // 
             this.labelOtdel.AutoSize = true;
-            this.labelOtdel.Location = new System.Drawing.Point(55, 308);
+            this.labelOtdel.Location = new System.Drawing.Point(24, 297);
             this.labelOtdel.Name = "labelOtdel";
             this.labelOtdel.Size = new System.Drawing.Size(38, 13);
             this.labelOtdel.TabIndex = 21;
@@ -160,20 +160,22 @@
             // id
             // 
             this.id.Text = "id";
+            this.id.Width = 46;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Имя";
+            this.columnHeader2.Width = 74;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Фамилия";
-            this.columnHeader3.Width = 83;
+            this.columnHeader3.Width = 96;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Отчество";
-            this.columnHeader4.Width = 86;
+            this.columnHeader4.Width = 98;
             // 
             // columnHeader5
             // 
@@ -183,43 +185,50 @@
             // columnHeader6
             // 
             this.columnHeader6.Text = "Отдел";
-            this.columnHeader6.Width = 54;
+            this.columnHeader6.Width = 88;
             // 
             // buttonAdd
             // 
+            this.buttonAdd.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAdd.Location = new System.Drawing.Point(203, 340);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(100, 43);
+            this.buttonAdd.Size = new System.Drawing.Size(120, 36);
             this.buttonAdd.TabIndex = 23;
             this.buttonAdd.Text = "Добавить";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(358, 340);
+            this.buttonEdit.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonEdit.Location = new System.Drawing.Point(395, 340);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(102, 43);
+            this.buttonEdit.Size = new System.Drawing.Size(120, 36);
             this.buttonEdit.TabIndex = 24;
             this.buttonEdit.Text = "Редактировать";
-            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.UseVisualStyleBackColor = false;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonDel
             // 
-            this.buttonDel.Location = new System.Drawing.Point(529, 340);
+            this.buttonDel.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDel.Location = new System.Drawing.Point(578, 340);
             this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Size = new System.Drawing.Size(117, 43);
+            this.buttonDel.Size = new System.Drawing.Size(120, 36);
             this.buttonDel.TabIndex = 25;
             this.buttonDel.Text = "Удалить";
-            this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.UseVisualStyleBackColor = false;
             this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // FormStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 494);
+            this.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.ClientSize = new System.Drawing.Size(746, 407);
             this.Controls.Add(this.buttonDel);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonAdd);
@@ -235,6 +244,7 @@
             this.Controls.Add(this.textBoxLastName);
             this.Controls.Add(this.textBoxFirstName);
             this.Name = "FormStaff";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormStaff";
             this.ResumeLayout(false);
             this.PerformLayout();

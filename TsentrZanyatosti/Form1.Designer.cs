@@ -38,69 +38,82 @@
             // 
             // buttonStaff
             // 
-            this.buttonStaff.Location = new System.Drawing.Point(113, 136);
+            this.buttonStaff.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonStaff.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonStaff.Location = new System.Drawing.Point(14, 212);
             this.buttonStaff.Name = "buttonStaff";
-            this.buttonStaff.Size = new System.Drawing.Size(125, 56);
+            this.buttonStaff.Size = new System.Drawing.Size(265, 48);
             this.buttonStaff.TabIndex = 1;
             this.buttonStaff.Text = "Сотрудники";
-            this.buttonStaff.UseVisualStyleBackColor = true;
+            this.buttonStaff.UseVisualStyleBackColor = false;
             this.buttonStaff.Click += new System.EventHandler(this.buttonStaff_Click);
             // 
             // buttonBank
             // 
-            this.buttonBank.Location = new System.Drawing.Point(113, 198);
+            this.buttonBank.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonBank.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonBank.Location = new System.Drawing.Point(14, 266);
             this.buttonBank.Name = "buttonBank";
-            this.buttonBank.Size = new System.Drawing.Size(125, 58);
+            this.buttonBank.Size = new System.Drawing.Size(265, 48);
             this.buttonBank.TabIndex = 2;
             this.buttonBank.Text = "Банк вакансий";
-            this.buttonBank.UseVisualStyleBackColor = true;
+            this.buttonBank.UseVisualStyleBackColor = false;
             this.buttonBank.Click += new System.EventHandler(this.buttonBank_Click);
             // 
             // buttonReception
             // 
-            this.buttonReception.Location = new System.Drawing.Point(113, 326);
+            this.buttonReception.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonReception.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonReception.Location = new System.Drawing.Point(14, 374);
             this.buttonReception.Name = "buttonReception";
-            this.buttonReception.Size = new System.Drawing.Size(125, 61);
+            this.buttonReception.Size = new System.Drawing.Size(265, 48);
             this.buttonReception.TabIndex = 3;
             this.buttonReception.Text = "Запись на прием";
-            this.buttonReception.UseVisualStyleBackColor = true;
+            this.buttonReception.UseVisualStyleBackColor = false;
             this.buttonReception.Click += new System.EventHandler(this.buttonReception_Click);
             // 
             // buttonEmployer
             // 
-            this.buttonEmployer.Location = new System.Drawing.Point(113, 76);
+            this.buttonEmployer.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonEmployer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonEmployer.Location = new System.Drawing.Point(12, 158);
             this.buttonEmployer.Name = "buttonEmployer";
-            this.buttonEmployer.Size = new System.Drawing.Size(125, 54);
+            this.buttonEmployer.Size = new System.Drawing.Size(265, 48);
             this.buttonEmployer.TabIndex = 4;
             this.buttonEmployer.Text = "Работодатели";
-            this.buttonEmployer.UseVisualStyleBackColor = true;
+            this.buttonEmployer.UseVisualStyleBackColor = false;
             this.buttonEmployer.Click += new System.EventHandler(this.buttonEmployer_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(113, 262);
+            this.button1.BackColor = System.Drawing.SystemColors.Info;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(14, 320);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 58);
+            this.button1.Size = new System.Drawing.Size(265, 48);
             this.button1.TabIndex = 5;
             this.button1.Text = "Гражданин";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonPay
             // 
-            this.buttonPay.Location = new System.Drawing.Point(113, 393);
+            this.buttonPay.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonPay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonPay.Location = new System.Drawing.Point(14, 428);
             this.buttonPay.Name = "buttonPay";
-            this.buttonPay.Size = new System.Drawing.Size(125, 57);
+            this.buttonPay.Size = new System.Drawing.Size(265, 48);
             this.buttonPay.TabIndex = 6;
             this.buttonPay.Text = "Журнал выплат";
-            this.buttonPay.UseVisualStyleBackColor = true;
+            this.buttonPay.UseVisualStyleBackColor = false;
             this.buttonPay.Click += new System.EventHandler(this.buttonPay_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 594);
+            this.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.ClientSize = new System.Drawing.Size(291, 498);
             this.Controls.Add(this.buttonPay);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonEmployer);
@@ -108,6 +121,7 @@
             this.Controls.Add(this.buttonBank);
             this.Controls.Add(this.buttonStaff);
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);

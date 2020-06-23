@@ -12,17 +12,11 @@ namespace TsentrZanyatosti
     using System;
     using System.Collections.Generic;
     
-    public partial class ReceptionSet
+    public partial class Users
     {
         public int id { get; set; }
-        public string service { get; set; }
-        public string date { get; set; }
-        public int idCitizen { get; set; }
-        public int idStaff { get; set; }
-        public int idEmployer { get; set; }
-    
-        public virtual CitizenSet CitizenSet { get; set; }
-        public virtual EmployerSet EmployerSet { get; set; }
-        public virtual StaffSet StaffSet { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
+        public string Type { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace TsentrZanyatosti
 {
     static class Program
     {
-        public static ZanyatostEntities znt = new ZanyatostEntities();
+        public static ZanyatostEntities1 znt = new ZanyatostEntities1();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -17,7 +17,7 @@ namespace TsentrZanyatosti
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu());
+            Application.Run(new FormAuthorization());
         }
     }
 }

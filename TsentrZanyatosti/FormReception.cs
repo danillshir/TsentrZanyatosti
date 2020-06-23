@@ -18,6 +18,7 @@ namespace TsentrZanyatosti
             ShowCitizen();
             ShowStaff();
             ShowReception();
+            ShowEmployer();
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -29,11 +30,21 @@ namespace TsentrZanyatosti
                 reception.idStaff = Convert.ToInt32(comboBoxStaff.SelectedItem.ToString().Split('.')[0]);
                 reception.service = textBoxService.Text;
                 reception.date = textBoxDate.Text;
+                reception.idEmployer = Convert.ToInt32(comboBoxEmployer.SelectedItem.ToString().Split('.')[0]);
                 Program.znt.ReceptionSet.Add(reception);
                 Program.znt.SaveChanges();
                 ShowReception();
             }
             else MessageBox.Show("Выберите данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        void ShowEmployer()
+        {
+            comboBoxEmployer.Items.Clear();
+            foreach (EmployerSet employerSet in Program.znt.EmployerSet)
+            {
+                string[] item = { employerSet.id.ToString() + ".", employerSet.Email};
+                comboBoxEmployer.Items.Add(string.Join(" ", item));
+            }
         }
         void ShowCitizen()
         {
@@ -63,7 +74,7 @@ namespace TsentrZanyatosti
                     {
                         reception.idCitizen.ToString(), reception.CitizenSet.LastName+" "+reception.CitizenSet.FirstName+" "+reception.CitizenSet.MiddleName,
                         reception.service,reception.date,
-                        reception.idStaff.ToString(), reception.StaffSet.LastName+" "+reception.StaffSet.FirstName+" "+reception.StaffSet.MiddleName
+                        reception.idStaff.ToString(), reception.StaffSet.LastName+" "+reception.StaffSet.FirstName+" "+reception.StaffSet.MiddleName, reception.EmployerSet.Email
                     });
                 item.Tag = reception;
                 listViewReception.Items.Add(item);
@@ -79,6 +90,7 @@ namespace TsentrZanyatosti
                 reception.idStaff = Convert.ToInt32(comboBoxStaff.SelectedItem.ToString().Split('.')[0]);
                 reception.service = textBoxService.Text;
                 reception.date = textBoxDate.Text;
+                reception.idEmployer = Convert.ToInt32(comboBoxEmployer.SelectedItem.ToString().Split('.')[0]);
                 Program.znt.SaveChanges();
                 ShowReception();
             }
@@ -93,6 +105,7 @@ namespace TsentrZanyatosti
                 comboBoxStaff.SelectedIndex = comboBoxStaff.FindString(reception.idStaff.ToString());
                 textBoxService.Text = reception.service;
                 textBoxDate.Text = reception.date;
+                comboBoxEmployer.SelectedIndex = comboBoxEmployer.FindString(reception.idEmployer.ToString());
             }
             else
             {
@@ -100,6 +113,7 @@ namespace TsentrZanyatosti
                 comboBoxStaff.SelectedItem = null;
                 textBoxService.Text = "";
                 textBoxDate.Text = "";
+                comboBoxEmployer.SelectedItem = null;
             }
         }
 
@@ -118,6 +132,7 @@ namespace TsentrZanyatosti
                 comboBoxStaff.SelectedItem = null;
                 textBoxService.Text = "";
                 textBoxDate.Text = "";
+                comboBoxEmployer.SelectedItem = null;
             }
             catch
             {

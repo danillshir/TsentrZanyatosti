@@ -43,27 +43,29 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.comboBoxEmployer = new System.Windows.Forms.ComboBox();
             this.labelEmployer = new System.Windows.Forms.Label();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // buttonDel
             // 
-            this.buttonDel.Location = new System.Drawing.Point(573, 292);
+            this.buttonDel.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDel.Location = new System.Drawing.Point(570, 348);
             this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Size = new System.Drawing.Size(117, 43);
+            this.buttonDel.Size = new System.Drawing.Size(120, 36);
             this.buttonDel.TabIndex = 36;
             this.buttonDel.Text = "Удалить";
-            this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.UseVisualStyleBackColor = false;
             this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // labelArranged
             // 
             this.labelArranged.AutoSize = true;
-            this.labelArranged.Location = new System.Drawing.Point(30, 260);
+            this.labelArranged.Location = new System.Drawing.Point(30, 292);
             this.labelArranged.Name = "labelArranged";
             this.labelArranged.Size = new System.Drawing.Size(56, 13);
             this.labelArranged.TabIndex = 33;
@@ -72,7 +74,7 @@
             // labelNeed
             // 
             this.labelNeed.AutoSize = true;
-            this.labelNeed.Location = new System.Drawing.Point(30, 221);
+            this.labelNeed.Location = new System.Drawing.Point(30, 253);
             this.labelNeed.Name = "labelNeed";
             this.labelNeed.Size = new System.Drawing.Size(60, 13);
             this.labelNeed.TabIndex = 32;
@@ -81,7 +83,7 @@
             // labelIncome
             // 
             this.labelIncome.AutoSize = true;
-            this.labelIncome.Location = new System.Drawing.Point(30, 182);
+            this.labelIncome.Location = new System.Drawing.Point(30, 214);
             this.labelIncome.Name = "labelIncome";
             this.labelIncome.Size = new System.Drawing.Size(75, 13);
             this.labelIncome.TabIndex = 31;
@@ -90,7 +92,7 @@
             // labelJob
             // 
             this.labelJob.AutoSize = true;
-            this.labelJob.Location = new System.Drawing.Point(30, 143);
+            this.labelJob.Location = new System.Drawing.Point(30, 175);
             this.labelJob.Name = "labelJob";
             this.labelJob.Size = new System.Drawing.Size(65, 13);
             this.labelJob.TabIndex = 30;
@@ -98,28 +100,28 @@
             // 
             // textBoxArranged
             // 
-            this.textBoxArranged.Location = new System.Drawing.Point(33, 276);
+            this.textBoxArranged.Location = new System.Drawing.Point(33, 308);
             this.textBoxArranged.Name = "textBoxArranged";
-            this.textBoxArranged.Size = new System.Drawing.Size(100, 20);
+            this.textBoxArranged.Size = new System.Drawing.Size(121, 20);
             this.textBoxArranged.TabIndex = 29;
             // 
             // textBoxNeed
             // 
-            this.textBoxNeed.Location = new System.Drawing.Point(33, 237);
+            this.textBoxNeed.Location = new System.Drawing.Point(33, 269);
             this.textBoxNeed.Name = "textBoxNeed";
-            this.textBoxNeed.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNeed.Size = new System.Drawing.Size(121, 20);
             this.textBoxNeed.TabIndex = 28;
             // 
             // textBoxIncome
             // 
-            this.textBoxIncome.Location = new System.Drawing.Point(33, 198);
+            this.textBoxIncome.Location = new System.Drawing.Point(33, 230);
             this.textBoxIncome.Name = "textBoxIncome";
-            this.textBoxIncome.Size = new System.Drawing.Size(100, 20);
+            this.textBoxIncome.Size = new System.Drawing.Size(121, 20);
             this.textBoxIncome.TabIndex = 27;
             // 
             // textBoxJob
             // 
-            this.textBoxJob.Location = new System.Drawing.Point(33, 159);
+            this.textBoxJob.Location = new System.Drawing.Point(33, 191);
             this.textBoxJob.Name = "textBoxJob";
             this.textBoxJob.Size = new System.Drawing.Size(100, 20);
             this.textBoxJob.TabIndex = 26;
@@ -136,7 +138,7 @@
             this.listViewBank.FullRowSelect = true;
             this.listViewBank.GridLines = true;
             this.listViewBank.HideSelection = false;
-            this.listViewBank.Location = new System.Drawing.Point(195, 79);
+            this.listViewBank.Location = new System.Drawing.Point(195, 135);
             this.listViewBank.MultiSelect = false;
             this.listViewBank.Name = "listViewBank";
             this.listViewBank.Size = new System.Drawing.Size(495, 207);
@@ -170,30 +172,39 @@
             this.columnHeader5.Text = "Устроено";
             this.columnHeader5.Width = 87;
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Компания";
+            this.columnHeader1.Width = 79;
+            // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(386, 292);
+            this.buttonEdit.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonEdit.Location = new System.Drawing.Point(374, 348);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(102, 43);
+            this.buttonEdit.Size = new System.Drawing.Size(120, 36);
             this.buttonEdit.TabIndex = 40;
             this.buttonEdit.Text = "Редактировать";
-            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.UseVisualStyleBackColor = false;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(195, 292);
+            this.buttonAdd.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAdd.Location = new System.Drawing.Point(195, 348);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(100, 43);
+            this.buttonAdd.Size = new System.Drawing.Size(120, 36);
             this.buttonAdd.TabIndex = 39;
             this.buttonAdd.Text = "Добавить";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // comboBoxEmployer
             // 
             this.comboBoxEmployer.FormattingEnabled = true;
-            this.comboBoxEmployer.Location = new System.Drawing.Point(33, 115);
+            this.comboBoxEmployer.Location = new System.Drawing.Point(33, 151);
             this.comboBoxEmployer.Name = "comboBoxEmployer";
             this.comboBoxEmployer.Size = new System.Drawing.Size(121, 21);
             this.comboBoxEmployer.TabIndex = 41;
@@ -201,22 +212,18 @@
             // labelEmployer
             // 
             this.labelEmployer.AutoSize = true;
-            this.labelEmployer.Location = new System.Drawing.Point(33, 96);
+            this.labelEmployer.Location = new System.Drawing.Point(30, 135);
             this.labelEmployer.Name = "labelEmployer";
             this.labelEmployer.Size = new System.Drawing.Size(78, 13);
             this.labelEmployer.TabIndex = 42;
             this.labelEmployer.Text = "Работодатели";
             // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Компания";
-            this.columnHeader1.Width = 79;
-            // 
             // FormBank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(738, 463);
+            this.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.ClientSize = new System.Drawing.Size(738, 415);
             this.Controls.Add(this.labelEmployer);
             this.Controls.Add(this.comboBoxEmployer);
             this.Controls.Add(this.buttonEdit);
@@ -232,6 +239,7 @@
             this.Controls.Add(this.textBoxIncome);
             this.Controls.Add(this.textBoxJob);
             this.Name = "FormBank";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormBank";
             this.ResumeLayout(false);
             this.PerformLayout();

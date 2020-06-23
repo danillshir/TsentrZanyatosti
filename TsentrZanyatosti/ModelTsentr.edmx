@@ -56,6 +56,7 @@
           <Property Name="date" Type="nvarchar(max)" Nullable="false" />
           <Property Name="idCitizen" Type="int" Nullable="false" />
           <Property Name="idStaff" Type="int" Nullable="false" />
+          <Property Name="idEmployer" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="StaffSet">
           <Key>
@@ -67,6 +68,15 @@
           <Property Name="MiddleName" Type="nvarchar(max)" />
           <Property Name="Phone" Type="nvarchar(max)" />
           <Property Name="Otdel" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
         </EntityType>
         <Association Name="FK_BankSet_EmployerSet">
           <End Role="EmployerSet" Type="Self.EmployerSet" Multiplicity="1" />
@@ -104,6 +114,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_ReceptionSet_EmployerSet">
+          <End Role="EmployerSet" Type="Self.EmployerSet" Multiplicity="1" />
+          <End Role="ReceptionSet" Type="Self.ReceptionSet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmployerSet">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ReceptionSet">
+              <PropertyRef Name="idEmployer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_ReceptionSet_StaffSet">
           <End Role="StaffSet" Type="Self.StaffSet" Multiplicity="1" />
           <End Role="ReceptionSet" Type="Self.ReceptionSet" Multiplicity="*" />
@@ -123,6 +145,7 @@
           <EntitySet Name="PaySet" EntityType="Self.PaySet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ReceptionSet" EntityType="Self.ReceptionSet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="StaffSet" EntityType="Self.StaffSet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_BankSet_EmployerSet" Association="Self.FK_BankSet_EmployerSet">
             <End Role="EmployerSet" EntitySet="EmployerSet" />
             <End Role="BankSet" EntitySet="BankSet" />
@@ -133,6 +156,10 @@
           </AssociationSet>
           <AssociationSet Name="FK_ReceptionSet_CitizenSet" Association="Self.FK_ReceptionSet_CitizenSet">
             <End Role="CitizenSet" EntitySet="CitizenSet" />
+            <End Role="ReceptionSet" EntitySet="ReceptionSet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ReceptionSet_EmployerSet" Association="Self.FK_ReceptionSet_EmployerSet">
+            <End Role="EmployerSet" EntitySet="EmployerSet" />
             <End Role="ReceptionSet" EntitySet="ReceptionSet" />
           </AssociationSet>
           <AssociationSet Name="FK_ReceptionSet_StaffSet" Association="Self.FK_ReceptionSet_StaffSet">
@@ -181,6 +208,7 @@
           <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="BankSet" Relationship="Self.FK_BankSet_EmployerSet" FromRole="EmployerSet" ToRole="BankSet" />
+          <NavigationProperty Name="ReceptionSet" Relationship="Self.FK_ReceptionSet_EmployerSet" FromRole="EmployerSet" ToRole="ReceptionSet" />
         </EntityType>
         <EntityType Name="PaySet">
           <Key>
@@ -201,7 +229,9 @@
           <Property Name="date" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="idCitizen" Type="Int32" Nullable="false" />
           <Property Name="idStaff" Type="Int32" Nullable="false" />
+          <Property Name="idEmployer" Type="Int32" Nullable="false" />
           <NavigationProperty Name="CitizenSet" Relationship="Self.FK_ReceptionSet_CitizenSet" FromRole="ReceptionSet" ToRole="CitizenSet" />
+          <NavigationProperty Name="EmployerSet" Relationship="Self.FK_ReceptionSet_EmployerSet" FromRole="ReceptionSet" ToRole="EmployerSet" />
           <NavigationProperty Name="StaffSet" Relationship="Self.FK_ReceptionSet_StaffSet" FromRole="ReceptionSet" ToRole="StaffSet" />
         </EntityType>
         <EntityType Name="StaffSet">
@@ -215,6 +245,15 @@
           <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Otdel" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="ReceptionSet" Relationship="Self.FK_ReceptionSet_StaffSet" FromRole="StaffSet" ToRole="ReceptionSet" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Login" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
         <Association Name="FK_BankSet_EmployerSet">
           <End Role="EmployerSet" Type="Self.EmployerSet" Multiplicity="1" />
@@ -252,6 +291,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_ReceptionSet_EmployerSet">
+          <End Role="EmployerSet" Type="Self.EmployerSet" Multiplicity="1" />
+          <End Role="ReceptionSet" Type="Self.ReceptionSet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmployerSet">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ReceptionSet">
+              <PropertyRef Name="idEmployer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_ReceptionSet_StaffSet">
           <End Role="StaffSet" Type="Self.StaffSet" Multiplicity="1" />
           <End Role="ReceptionSet" Type="Self.ReceptionSet" Multiplicity="*" />
@@ -264,13 +315,14 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="ZanyatostEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="ZanyatostEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="BankSet" EntityType="Self.BankSet" />
           <EntitySet Name="CitizenSet" EntityType="Self.CitizenSet" />
           <EntitySet Name="EmployerSet" EntityType="Self.EmployerSet" />
           <EntitySet Name="PaySet" EntityType="Self.PaySet" />
           <EntitySet Name="ReceptionSet" EntityType="Self.ReceptionSet" />
           <EntitySet Name="StaffSet" EntityType="Self.StaffSet" />
+          <EntitySet Name="Users" EntityType="Self.Users" />
           <AssociationSet Name="FK_BankSet_EmployerSet" Association="Self.FK_BankSet_EmployerSet">
             <End Role="EmployerSet" EntitySet="EmployerSet" />
             <End Role="BankSet" EntitySet="BankSet" />
@@ -283,6 +335,10 @@
             <End Role="CitizenSet" EntitySet="CitizenSet" />
             <End Role="ReceptionSet" EntitySet="ReceptionSet" />
           </AssociationSet>
+          <AssociationSet Name="FK_ReceptionSet_EmployerSet" Association="Self.FK_ReceptionSet_EmployerSet">
+            <End Role="EmployerSet" EntitySet="EmployerSet" />
+            <End Role="ReceptionSet" EntitySet="ReceptionSet" />
+          </AssociationSet>
           <AssociationSet Name="FK_ReceptionSet_StaffSet" Association="Self.FK_ReceptionSet_StaffSet">
             <End Role="StaffSet" EntitySet="StaffSet" />
             <End Role="ReceptionSet" EntitySet="ReceptionSet" />
@@ -293,7 +349,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище ZanyatostModelContainer" CdmEntityContainer="ZanyatostEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище ZanyatostModelContainer" CdmEntityContainer="ZanyatostEntities1">
           <EntitySetMapping Name="BankSet">
             <EntityTypeMapping TypeName="ZanyatostModel.BankSet">
               <MappingFragment StoreEntitySet="BankSet">
@@ -348,6 +404,7 @@
                 <ScalarProperty Name="date" ColumnName="date" />
                 <ScalarProperty Name="idCitizen" ColumnName="idCitizen" />
                 <ScalarProperty Name="idStaff" ColumnName="idStaff" />
+                <ScalarProperty Name="idEmployer" ColumnName="idEmployer" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -360,6 +417,16 @@
                 <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
                 <ScalarProperty Name="Phone" ColumnName="Phone" />
                 <ScalarProperty Name="Otdel" ColumnName="Otdel" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="ZanyatostModel.Users">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
