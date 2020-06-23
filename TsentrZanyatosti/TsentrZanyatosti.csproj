@@ -173,6 +173,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EntityDeploy Include="ModelTsentr.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -209,6 +210,8 @@
       <DependentUpon>ModelTsentr.edmx</DependentUpon>
       <LastGenOutput>ModelTsentr.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\Без имени-1 %281%29.png" />
+    <None Include="Resources\Без имени-1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

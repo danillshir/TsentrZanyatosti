@@ -48,6 +48,8 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.comboBoxEmployer = new System.Windows.Forms.ComboBox();
             this.labelEmployer = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonDel
@@ -123,7 +125,7 @@
             // 
             this.textBoxJob.Location = new System.Drawing.Point(33, 191);
             this.textBoxJob.Name = "textBoxJob";
-            this.textBoxJob.Size = new System.Drawing.Size(100, 20);
+            this.textBoxJob.Size = new System.Drawing.Size(121, 20);
             this.textBoxJob.TabIndex = 26;
             // 
             // listViewBank
@@ -218,12 +220,23 @@
             this.labelEmployer.TabIndex = 42;
             this.labelEmployer.Text = "Работодатели";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TsentrZanyatosti.Properties.Resources.Без_имени_1__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(245, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 43;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormBank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ClientSize = new System.Drawing.Size(738, 415);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelEmployer);
             this.Controls.Add(this.comboBoxEmployer);
             this.Controls.Add(this.buttonEdit);
@@ -240,7 +253,8 @@
             this.Controls.Add(this.textBoxJob);
             this.Name = "FormBank";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormBank";
+            this.Text = "Банк вакансий";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,5 +282,6 @@
         private System.Windows.Forms.ComboBox comboBoxEmployer;
         private System.Windows.Forms.Label labelEmployer;
         private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

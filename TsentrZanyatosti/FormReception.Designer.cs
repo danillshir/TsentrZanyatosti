@@ -49,6 +49,8 @@
             this.buttonEdit = new System.Windows.Forms.Button();
             this.comboBoxEmployer = new System.Windows.Forms.ComboBox();
             this.labelEmployer = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxCitizen
@@ -227,12 +229,23 @@
             this.labelEmployer.TabIndex = 13;
             this.labelEmployer.Text = "Работодатель";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TsentrZanyatosti.Properties.Resources.Без_имени_1__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(245, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 44;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormReception
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ClientSize = new System.Drawing.Size(886, 420);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelEmployer);
             this.Controls.Add(this.comboBoxEmployer);
             this.Controls.Add(this.buttonEdit);
@@ -251,6 +264,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormReception";
             this.Load += new System.EventHandler(this.FormReception_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,5 +293,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ComboBox comboBoxEmployer;
         private System.Windows.Forms.Label labelEmployer;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

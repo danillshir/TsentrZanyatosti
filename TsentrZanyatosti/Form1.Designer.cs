@@ -34,6 +34,8 @@
             this.buttonEmployer = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonPay = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonStaff
@@ -108,12 +110,23 @@
             this.buttonPay.UseVisualStyleBackColor = false;
             this.buttonPay.Click += new System.EventHandler(this.buttonPay_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TsentrZanyatosti.Properties.Resources.Без_имени_1__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(287, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ClientSize = new System.Drawing.Size(291, 498);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonPay);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonEmployer);
@@ -122,8 +135,9 @@
             this.Controls.Add(this.buttonStaff);
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menu";
+            this.Text = "Меню";
             this.Load += new System.EventHandler(this.Menu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -135,6 +149,7 @@
         private System.Windows.Forms.Button buttonEmployer;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonPay;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

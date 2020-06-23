@@ -48,32 +48,34 @@
             this.labelMiddleName = new System.Windows.Forms.Label();
             this.labelPhone = new System.Windows.Forms.Label();
             this.labelStatus = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxFirstname
             // 
-            this.textBoxFirstname.Location = new System.Drawing.Point(52, 130);
+            this.textBoxFirstname.Location = new System.Drawing.Point(52, 149);
             this.textBoxFirstname.Name = "textBoxFirstname";
             this.textBoxFirstname.Size = new System.Drawing.Size(121, 20);
             this.textBoxFirstname.TabIndex = 0;
             // 
             // textBoxLastname
             // 
-            this.textBoxLastname.Location = new System.Drawing.Point(52, 177);
+            this.textBoxLastname.Location = new System.Drawing.Point(52, 202);
             this.textBoxLastname.Name = "textBoxLastname";
             this.textBoxLastname.Size = new System.Drawing.Size(121, 20);
             this.textBoxLastname.TabIndex = 1;
             // 
             // textBoxMiddlename
             // 
-            this.textBoxMiddlename.Location = new System.Drawing.Point(52, 220);
+            this.textBoxMiddlename.Location = new System.Drawing.Point(52, 253);
             this.textBoxMiddlename.Name = "textBoxMiddlename";
             this.textBoxMiddlename.Size = new System.Drawing.Size(121, 20);
             this.textBoxMiddlename.TabIndex = 2;
             // 
             // textBoxPhone
             // 
-            this.textBoxPhone.Location = new System.Drawing.Point(52, 266);
+            this.textBoxPhone.Location = new System.Drawing.Point(52, 303);
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(121, 20);
             this.textBoxPhone.TabIndex = 3;
@@ -85,7 +87,7 @@
             "Безработный",
             "Проходит профобучение",
             "Несовершеннолетний"});
-            this.comboBoxStatus.Location = new System.Drawing.Point(52, 309);
+            this.comboBoxStatus.Location = new System.Drawing.Point(52, 356);
             this.comboBoxStatus.Name = "comboBoxStatus";
             this.comboBoxStatus.Size = new System.Drawing.Size(121, 21);
             this.comboBoxStatus.TabIndex = 4;
@@ -102,10 +104,10 @@
             this.listViewCitizen.FullRowSelect = true;
             this.listViewCitizen.GridLines = true;
             this.listViewCitizen.HideSelection = false;
-            this.listViewCitizen.Location = new System.Drawing.Point(179, 111);
+            this.listViewCitizen.Location = new System.Drawing.Point(205, 133);
             this.listViewCitizen.MultiSelect = false;
             this.listViewCitizen.Name = "listViewCitizen";
-            this.listViewCitizen.Size = new System.Drawing.Size(435, 219);
+            this.listViewCitizen.Size = new System.Drawing.Size(435, 244);
             this.listViewCitizen.TabIndex = 5;
             this.listViewCitizen.UseCompatibleStateImageBehavior = false;
             this.listViewCitizen.View = System.Windows.Forms.View.Details;
@@ -144,7 +146,7 @@
             // buttonAdd
             // 
             this.buttonAdd.BackColor = System.Drawing.SystemColors.Info;
-            this.buttonAdd.Location = new System.Drawing.Point(179, 351);
+            this.buttonAdd.Location = new System.Drawing.Point(205, 392);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(120, 36);
             this.buttonAdd.TabIndex = 6;
@@ -155,7 +157,7 @@
             // buttonDel
             // 
             this.buttonDel.BackColor = System.Drawing.SystemColors.Info;
-            this.buttonDel.Location = new System.Drawing.Point(342, 351);
+            this.buttonDel.Location = new System.Drawing.Point(361, 392);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(120, 36);
             this.buttonDel.TabIndex = 7;
@@ -167,7 +169,7 @@
             // 
             this.buttonEdit.BackColor = System.Drawing.SystemColors.Info;
             this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonEdit.Location = new System.Drawing.Point(494, 351);
+            this.buttonEdit.Location = new System.Drawing.Point(520, 392);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(120, 36);
             this.buttonEdit.TabIndex = 8;
@@ -178,7 +180,7 @@
             // labelFirstName
             // 
             this.labelFirstName.AutoSize = true;
-            this.labelFirstName.Location = new System.Drawing.Point(52, 111);
+            this.labelFirstName.Location = new System.Drawing.Point(49, 133);
             this.labelFirstName.Name = "labelFirstName";
             this.labelFirstName.Size = new System.Drawing.Size(29, 13);
             this.labelFirstName.TabIndex = 9;
@@ -187,7 +189,7 @@
             // labelLastName
             // 
             this.labelLastName.AutoSize = true;
-            this.labelLastName.Location = new System.Drawing.Point(52, 158);
+            this.labelLastName.Location = new System.Drawing.Point(49, 186);
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(56, 13);
             this.labelLastName.TabIndex = 10;
@@ -196,7 +198,7 @@
             // labelMiddleName
             // 
             this.labelMiddleName.AutoSize = true;
-            this.labelMiddleName.Location = new System.Drawing.Point(52, 201);
+            this.labelMiddleName.Location = new System.Drawing.Point(49, 237);
             this.labelMiddleName.Name = "labelMiddleName";
             this.labelMiddleName.Size = new System.Drawing.Size(54, 13);
             this.labelMiddleName.TabIndex = 11;
@@ -205,7 +207,7 @@
             // labelPhone
             // 
             this.labelPhone.AutoSize = true;
-            this.labelPhone.Location = new System.Drawing.Point(52, 247);
+            this.labelPhone.Location = new System.Drawing.Point(49, 287);
             this.labelPhone.Name = "labelPhone";
             this.labelPhone.Size = new System.Drawing.Size(93, 13);
             this.labelPhone.TabIndex = 12;
@@ -214,18 +216,29 @@
             // labelStatus
             // 
             this.labelStatus.AutoSize = true;
-            this.labelStatus.Location = new System.Drawing.Point(52, 290);
+            this.labelStatus.Location = new System.Drawing.Point(49, 340);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(41, 13);
             this.labelStatus.TabIndex = 13;
             this.labelStatus.Text = "Статус";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TsentrZanyatosti.Properties.Resources.Без_имени_1__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(245, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 44;
+            this.pictureBox1.TabStop = false;
             // 
             // FormCitizen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.ClientSize = new System.Drawing.Size(692, 416);
+            this.ClientSize = new System.Drawing.Size(720, 466);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.labelPhone);
             this.Controls.Add(this.labelMiddleName);
@@ -242,7 +255,8 @@
             this.Controls.Add(this.textBoxFirstname);
             this.Name = "FormCitizen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormCitizen";
+            this.Text = "Гражданины";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,5 +284,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -43,12 +43,14 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonDel = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxCitizen
             // 
             this.comboBoxCitizen.FormattingEnabled = true;
-            this.comboBoxCitizen.Location = new System.Drawing.Point(33, 127);
+            this.comboBoxCitizen.Location = new System.Drawing.Point(33, 157);
             this.comboBoxCitizen.Name = "comboBoxCitizen";
             this.comboBoxCitizen.Size = new System.Drawing.Size(121, 21);
             this.comboBoxCitizen.TabIndex = 0;
@@ -60,14 +62,14 @@
             "Материальная поддержка",
             "Пособие",
             "Стипендия"});
-            this.comboBoxType.Location = new System.Drawing.Point(33, 192);
+            this.comboBoxType.Location = new System.Drawing.Point(33, 226);
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(121, 21);
             this.comboBoxType.TabIndex = 1;
             // 
             // textBoxDate
             // 
-            this.textBoxDate.Location = new System.Drawing.Point(33, 265);
+            this.textBoxDate.Location = new System.Drawing.Point(33, 295);
             this.textBoxDate.Name = "textBoxDate";
             this.textBoxDate.Size = new System.Drawing.Size(121, 20);
             this.textBoxDate.TabIndex = 2;
@@ -83,7 +85,7 @@
             this.listViewPay.FullRowSelect = true;
             this.listViewPay.GridLines = true;
             this.listViewPay.HideSelection = false;
-            this.listViewPay.Location = new System.Drawing.Point(198, 111);
+            this.listViewPay.Location = new System.Drawing.Point(198, 141);
             this.listViewPay.MultiSelect = false;
             this.listViewPay.Name = "listViewPay";
             this.listViewPay.Size = new System.Drawing.Size(493, 174);
@@ -120,7 +122,7 @@
             // labelCitizen
             // 
             this.labelCitizen.AutoSize = true;
-            this.labelCitizen.Location = new System.Drawing.Point(30, 111);
+            this.labelCitizen.Location = new System.Drawing.Point(30, 141);
             this.labelCitizen.Name = "labelCitizen";
             this.labelCitizen.Size = new System.Drawing.Size(63, 13);
             this.labelCitizen.TabIndex = 4;
@@ -129,7 +131,7 @@
             // labelType
             // 
             this.labelType.AutoSize = true;
-            this.labelType.Location = new System.Drawing.Point(30, 176);
+            this.labelType.Location = new System.Drawing.Point(30, 210);
             this.labelType.Name = "labelType";
             this.labelType.Size = new System.Drawing.Size(74, 13);
             this.labelType.TabIndex = 5;
@@ -138,7 +140,7 @@
             // labelDate
             // 
             this.labelDate.AutoSize = true;
-            this.labelDate.Location = new System.Drawing.Point(30, 249);
+            this.labelDate.Location = new System.Drawing.Point(30, 279);
             this.labelDate.Name = "labelDate";
             this.labelDate.Size = new System.Drawing.Size(93, 13);
             this.labelDate.TabIndex = 6;
@@ -148,7 +150,7 @@
             // 
             this.buttonAdd.BackColor = System.Drawing.SystemColors.Info;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAdd.Location = new System.Drawing.Point(198, 303);
+            this.buttonAdd.Location = new System.Drawing.Point(198, 321);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(120, 36);
             this.buttonAdd.TabIndex = 7;
@@ -160,7 +162,7 @@
             // 
             this.buttonDel.BackColor = System.Drawing.SystemColors.Info;
             this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDel.Location = new System.Drawing.Point(382, 303);
+            this.buttonDel.Location = new System.Drawing.Point(382, 321);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(120, 36);
             this.buttonDel.TabIndex = 8;
@@ -172,7 +174,7 @@
             // 
             this.buttonEdit.BackColor = System.Drawing.SystemColors.Info;
             this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonEdit.Location = new System.Drawing.Point(571, 303);
+            this.buttonEdit.Location = new System.Drawing.Point(571, 321);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(120, 36);
             this.buttonEdit.TabIndex = 9;
@@ -180,12 +182,23 @@
             this.buttonEdit.UseVisualStyleBackColor = false;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TsentrZanyatosti.Properties.Resources.Без_имени_1__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(245, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 44;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormPay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.ClientSize = new System.Drawing.Size(736, 380);
+            this.ClientSize = new System.Drawing.Size(714, 409);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonDel);
             this.Controls.Add(this.buttonAdd);
@@ -198,7 +211,8 @@
             this.Controls.Add(this.comboBoxCitizen);
             this.Name = "FormPay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormPay";
+            this.Text = "Журнал выплат";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,5 +235,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
