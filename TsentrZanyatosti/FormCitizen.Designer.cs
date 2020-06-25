@@ -257,7 +257,7 @@
             this.Controls.Add(this.textBoxFirstname);
             this.Name = "FormCitizen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Гражданины";
+            this.Text = "Гражданин";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
