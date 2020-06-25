@@ -262,7 +262,7 @@
             this.Controls.Add(this.comboBoxCitizen);
             this.Name = "FormReception";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormReception";
+            this.Text = "Прием";
             this.Load += new System.EventHandler(this.FormReception_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

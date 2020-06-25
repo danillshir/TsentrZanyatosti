@@ -35,6 +35,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.buttonPay = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelHello = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,12 +121,23 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // labelHello
+            // 
+            this.labelHello.AutoSize = true;
+            this.labelHello.ForeColor = System.Drawing.Color.Black;
+            this.labelHello.Location = new System.Drawing.Point(12, 12);
+            this.labelHello.Name = "labelHello";
+            this.labelHello.Size = new System.Drawing.Size(29, 13);
+            this.labelHello.TabIndex = 8;
+            this.labelHello.Text = "label";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ClientSize = new System.Drawing.Size(291, 498);
+            this.Controls.Add(this.labelHello);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonPay);
             this.Controls.Add(this.button1);
@@ -139,6 +151,7 @@
             this.Load += new System.EventHandler(this.Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -150,6 +163,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonPay;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label labelHello;
     }
 }
 

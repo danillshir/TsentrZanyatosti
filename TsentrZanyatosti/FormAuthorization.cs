@@ -59,5 +59,16 @@ namespace TsentrZanyatosti
                 }
             }
         }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form formReg = new FormReg();
+            formReg.Show();
+        }
     }
 }

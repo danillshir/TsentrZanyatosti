@@ -8,7 +8,7 @@ namespace TsentrZanyatosti
 {
     static class Program
     {
-        public static ZanyatostEntities1 znt = new ZanyatostEntities1();
+        public static ZanyatostEntities2 znt = new ZanyatostEntities2();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>

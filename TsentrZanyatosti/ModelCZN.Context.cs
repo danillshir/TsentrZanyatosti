@@ -13,10 +13,10 @@ namespace TsentrZanyatosti
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ZanyatostEntities1 : DbContext
+    public partial class ZanyatostEntities2 : DbContext
     {
-        public ZanyatostEntities1()
-            : base("name=ZanyatostEntities1")
+        public ZanyatostEntities2()
+            : base("name=ZanyatostEntities2")
         {
         }
     

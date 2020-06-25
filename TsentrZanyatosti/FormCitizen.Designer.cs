@@ -146,7 +146,8 @@
             // buttonAdd
             // 
             this.buttonAdd.BackColor = System.Drawing.SystemColors.Info;
-            this.buttonAdd.Location = new System.Drawing.Point(205, 392);
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAdd.Location = new System.Drawing.Point(268, 392);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(120, 36);
             this.buttonAdd.TabIndex = 6;
@@ -157,7 +158,8 @@
             // buttonDel
             // 
             this.buttonDel.BackColor = System.Drawing.SystemColors.Info;
-            this.buttonDel.Location = new System.Drawing.Point(361, 392);
+            this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDel.Location = new System.Drawing.Point(394, 392);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(120, 36);
             this.buttonDel.TabIndex = 7;

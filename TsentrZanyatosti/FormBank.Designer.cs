@@ -96,9 +96,9 @@
             this.labelJob.AutoSize = true;
             this.labelJob.Location = new System.Drawing.Point(30, 175);
             this.labelJob.Name = "labelJob";
-            this.labelJob.Size = new System.Drawing.Size(65, 13);
+            this.labelJob.Size = new System.Drawing.Size(56, 13);
             this.labelJob.TabIndex = 30;
-            this.labelJob.Text = "Профессия";
+            this.labelJob.Text = "Вакансия";
             // 
             // textBoxArranged
             // 
@@ -183,7 +183,7 @@
             // 
             this.buttonEdit.BackColor = System.Drawing.SystemColors.Info;
             this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonEdit.Location = new System.Drawing.Point(374, 348);
+            this.buttonEdit.Location = new System.Drawing.Point(381, 348);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(120, 36);
             this.buttonEdit.TabIndex = 40;

@@ -15,6 +15,9 @@ namespace TsentrZanyatosti
         public Menu()
         {
             InitializeComponent();
+            if (FormAuthorization.users.type == null) buttonPay.Enabled = false;
+            labelHello.Text = "Приветствую тебя, " + FormAuthorization.users.login;
+
         }
 
         private void Menu_Load(object sender, EventArgs e)

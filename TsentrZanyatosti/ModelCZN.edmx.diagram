@@ -4,14 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="cf45ae8f58454738be02d10b00f4bfd9" Name="Diagram1">
-        <EntityTypeShape EntityType="ZanyatostModel.BankSet" Width="1.5" PointX="6" PointY="8.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="ZanyatostModel.CitizenSet" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+      <Diagram DiagramId="c518b6048fd949519bc4d8d9bfb8ca42" Name="Diagram1">
+        <EntityTypeShape EntityType="ZanyatostModel.BankSet" Width="1.5" PointX="6.875" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZanyatostModel.CitizenSet" Width="1.5" PointX="0.625" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ZanyatostModel.EmployerSet" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ZanyatostModel.PaySet" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="ZanyatostModel.ReceptionSet" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="ZanyatostModel.StaffSet" Width="1.5" PointX="3.75" PointY="8" IsExpanded="true" />
-        <EntityTypeShape EntityType="ZanyatostModel.Users" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZanyatostModel.PaySet" Width="1.5" PointX="3.875" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZanyatostModel.ReceptionSet" Width="1.5" PointX="6.875" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZanyatostModel.StaffSet" Width="1.5" PointX="0.625" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZanyatostModel.Users" Width="1.5" PointX="9.375" PointY="2.125" IsExpanded="true" />
         <AssociationConnector Association="ZanyatostModel.FK_BankSet_EmployerSet" ManuallyRouted="false" />
         <AssociationConnector Association="ZanyatostModel.FK_PaySet_CitizenSet" ManuallyRouted="false" />
         <AssociationConnector Association="ZanyatostModel.FK_ReceptionSet_CitizenSet" ManuallyRouted="false" />

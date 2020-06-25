@@ -76,7 +76,7 @@
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Type" Type="nvarchar(max)" />
         </EntityType>
         <Association Name="FK_BankSet_EmployerSet">
           <End Role="EmployerSet" Type="Self.EmployerSet" Multiplicity="1" />
@@ -253,7 +253,7 @@
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Login" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <Association Name="FK_BankSet_EmployerSet">
           <End Role="EmployerSet" Type="Self.EmployerSet" Multiplicity="1" />
@@ -315,7 +315,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="ZanyatostEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="ZanyatostEntities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="BankSet" EntityType="Self.BankSet" />
           <EntitySet Name="CitizenSet" EntityType="Self.CitizenSet" />
           <EntitySet Name="EmployerSet" EntityType="Self.EmployerSet" />
@@ -349,7 +349,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище ZanyatostModelContainer" CdmEntityContainer="ZanyatostEntities1">
+        <EntityContainerMapping StorageEntityContainer="Хранилище ZanyatostModelContainer" CdmEntityContainer="ZanyatostEntities2">
           <EntitySetMapping Name="BankSet">
             <EntityTypeMapping TypeName="ZanyatostModel.BankSet">
               <MappingFragment StoreEntitySet="BankSet">
