@@ -55,6 +55,7 @@
             this.textBoxPass.Name = "textBoxPass";
             this.textBoxPass.Size = new System.Drawing.Size(171, 20);
             this.textBoxPass.TabIndex = 8;
+            this.textBoxPass.UseSystemPasswordChar = true;
             // 
             // textBoxLog
             // 
