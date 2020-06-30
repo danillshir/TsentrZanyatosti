@@ -55,6 +55,7 @@
             // buttonAdd
             // 
             this.buttonAdd.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAdd.Location = new System.Drawing.Point(175, 331);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(140, 36);
@@ -195,7 +196,8 @@
             // buttonEdit
             // 
             this.buttonEdit.BackColor = System.Drawing.SystemColors.Info;
-            this.buttonEdit.Location = new System.Drawing.Point(368, 331);
+            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonEdit.Location = new System.Drawing.Point(364, 331);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(140, 36);
             this.buttonEdit.TabIndex = 42;
@@ -206,6 +208,7 @@
             // buttonDel
             // 
             this.buttonDel.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonDel.Location = new System.Drawing.Point(554, 331);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(140, 36);
